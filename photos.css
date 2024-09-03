@@ -1,0 +1,33 @@
+/* Mobile First View */
+/* Photo Grid */
+
+#row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.column img {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .column {
+        width: 25%;
+    }
+}

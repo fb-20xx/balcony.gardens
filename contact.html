@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Balcony Gardens</title>
+    <link rel="stylesheet" type="text/css" href="general.css" />
+    <link rel="stylesheet" type="text/css" href="header.css" />
+    <link rel="stylesheet" type="text/css" href="footer.css" />
+    <link rel="stylesheet" type="text/css" href="contact.css" />
+    </head>
+<body>
+    <header>
+        <h1>Balcony Gardens</h1>
+        <label for="hamburger_checkbox">
+            <img id="hamburger_image" src="images/hamburger_icon.svg" alt="Hamburger Menu" />
+        </label>
+        <input id="hamburger_checkbox" type="checkbox" />
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="photos.html">Photos</a>
+            <a href="about.html">About</a>
+            <a class="active_nav" href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form action="send_email.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <footer>
+        <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">
+            <img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" />
+        </a>
+        <br />Balcony Gardens is licensed under a 
+        <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+    </footer>
+</body>
+</html>

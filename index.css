@@ -1,0 +1,98 @@
+/* Mobile First View */
+
+h2 {
+    display: none;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+
+aside {
+    background: white;
+    padding: 5px 0;
+}
+
+/* Style the links in the aside element */
+aside a {
+    background: white;
+    color: black;
+    display: block;
+    font-size: 120%;
+    padding: 5px 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Uncomment the visited state if needed */
+aside a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+/* Change the color of aside links on hover using mouse */
+aside a:hover {
+    background: black;
+    color: white;
+}
+
+/* Change the color of aside links on focus using the tab key */
+aside a:focus {
+    background: black;
+    color: white;
+    outline: none;
+}
+
+article {
+    color: white;
+    font-size: 120%;
+    padding: 10px;
+}
+
+/* Style the links in the article element */
+article a {
+    color: white;
+    padding: 5px;
+}
+
+/* Change the color of article links on hover */
+article a:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Change the color of article links on focus */
+article a:focus {
+    background-color: white;
+    color: black;
+    outline: none;
+}
+
+#main_image {
+	color: white;
+	max-width: 100%;
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+	div{
+		display: inline-flex;
+	}
+	aside {
+		display: flex;
+		flex-direction: column;
+        float: left;
+		justify-content: center;
+		width: 30%;
+
+
+	}
+
+	section {
+		display: inline;
+		float: right;
+		width: 70%;
+	}
+
+}

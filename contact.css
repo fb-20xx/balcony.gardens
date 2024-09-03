@@ -1,0 +1,76 @@
+/* Mobile First View */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #black;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("background2.jpg");
+    margin: 0;
+    padding: 0;
+}
+
+.contact-form {
+    background-color: black;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    position: relative;
+    z-index: 1; /* Ensure the form is above other elements */
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: calc(100% - 20px);
+    margin: 0 auto 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #333; /* Dark text color for good contrast */
+    background-color: #fff; /* White background for input fields */
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Ensure the form fields are visible */
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #666; /* Placeholder text color */
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .column {
+        width: 25%;
+    }
+}
